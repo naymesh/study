@@ -1,0 +1,22 @@
+version: '2'
+services:
+    study-app:
+        image: study
+        external_links:
+            - study-mysql:mysql
+            - study-elasticsearch:elasticsearch
+        environment:
+            - SPRING_PROFILES_ACTIVE=prod
+            - SPRING_DATASOURCE_URL=jdbc:mysql://mysql:3306/study?useUnicode=true&characterEncoding=utf8&useSSL=false
+            - JHIPSTER_SLEEP=10 # gives time for the database to boot before the application
+            - SPRING_DATA_ELASTICSEARCH_CLUSTER_NODES=elasticsearch:9300
+        ports:
+            - 8080:8080
+    study-mysql:
+        extends:
+            file: mysql.yml
+            service: study-mysql
+    study-elasticsearch:
+        extends:
+            file: elasticsearch.yml
+            service: study-elasticsearch
