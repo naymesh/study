@@ -1,0 +1,30 @@
+
+<div>
+    <h2><span translate="studyApp.client.detail.title">Client</span> {{vm.client.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span translate="studyApp.client.name">Name</span></dt>
+        <dd>
+            <span>{{vm.client.name}}</span>
+        </dd>
+        <dt><span translate="studyApp.client.businessKey">Business Key</span></dt>
+        <dd>
+            <span>{{vm.client.businessKey}}</span>
+        </dd>
+        <dt><span translate="studyApp.client.address">Address</span></dt>
+        <dd>
+            <span>{{vm.client.address}}</span>
+        </dd>
+        <dt><span translate="studyApp.client.notes">Notes</span></dt>
+        <dd>
+            <span>{{vm.client.notes}}</span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            onclick="window.history.back()"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

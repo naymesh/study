@@ -1,0 +1,25 @@
+{
+    "studyApp": {
+        "client" : {
+            "home": {
+                "title": "Clients",
+                "createLabel": "नया Client बनाएँ",
+                "createOrEditLabel": "Client बनाएँ या संपादित करें",
+                "search": "Client खोजें"
+            },
+            "created": "एक नया Client [identifier: {{ param }}] तैयार है",
+            "updated": "एक Client [identifier: {{ param }}] का अद्यतन हुआ है",
+            "deleted": "Client [identifier: {{ param }}] हटा दिया है",
+            "delete": {
+                "question": "Client [id: {{ id }}] हटाने की पुष्टि करें"
+            },
+            "detail": {
+                "title": "Client"
+            },
+            "name": "Name",
+            "businessKey": "Business Key",
+            "address": "Address",
+            "notes": "Notes"
+        }
+    }
+}
